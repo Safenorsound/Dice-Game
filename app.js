@@ -17,4 +17,4 @@ activePlayer = 0;
 
 dice = Math.floor(Math.random() * 6) + 1;
 
-document.querySelector;
+document.querySelector('#score-0').textContent = dice;
