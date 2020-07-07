@@ -15,10 +15,15 @@ scores[(0, 0)];
 roundScore = 0;
 activePlayer = 0;
 
-dice = Math.floor(Math.random() * 6) + 1;
-
 // document.querySelector('#current-0' + activePlayer).textContent = dice;
 document.querySelector('#current-0' + activePlayer).innerHTML =
   '<em>' + dice + '</em>';
 
+  //Hides dice at strt of round
 document.querySelector('.dice').getElementsByClassName.display = 'none';
+
+//Anonymous function
+document.querySelector('btn-roll').addEventListener('click', function{
+    dice = Math.floor(Math.random() * 6) + 1;
+
+});
