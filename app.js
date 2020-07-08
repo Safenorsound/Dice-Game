@@ -24,6 +24,12 @@ document.querySelector('.dice').getElementsByClassName.display = 'none';
 
 //Anonymous function
 document.querySelector('btn-roll').addEventListener('click', function{
+
+    // 1. Random Number
     dice = Math.floor(Math.random() * 6) + 1;
+
+    // 2. Display the Result
+
+    // 3. Update the roundScore IF the roll is NOT 1. 
 
 });
