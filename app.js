@@ -9,9 +9,9 @@ GAME RULES:
 
 */
 
-var score, roundScore, activePlayer;
+var scores, roundScore, activePlayer;
 
-scores[(0, 0)];
+scores = [0, 0];
 roundScore = 0;
 activePlayer = 0;
 
