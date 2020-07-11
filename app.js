@@ -32,18 +32,19 @@ document.querySelector('btn-roll').addEventListener('click', function () {
   diceDOM.style.display = 'block';
   diceDOM.src = 'dice-' + dice + '.png';
 
-  // 3. Update the roundScore IF the roll is NOT 1. 
-  if (dice !== 1) {   //differential operator
+  // 3. Update the roundScore IF the roll is NOT 1.
+  if (dice !== 1) {
+    //differential operator
     // add score
     roundScore += dice;
-      document.querySelector('#current-' + activePlayer).textContent = roundScore;
-
+    document.querySelector('#current-' + activePlayer).textContent = roundScore;
   } else {
-      //next player
-      activePlayer === 0 ? activePlayer = 1;
+    //next player
+    activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
+    roundScore = 0;
+
+    document.getElementById('current-0').textContent = '0';
+    document.getElementById('current-1').textContent = '0';
   }
   // document.querySelector('#current-0' + activePlayer).innerHTML =
-  // '<em>' + dice + '</em>';
-
-  // //Hides dice at start of round
 });
