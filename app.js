@@ -53,9 +53,10 @@ scores[activePlayer] += roundScore;
     document.querySelector('#score-' + activePlayer).textContent = [activePlayer] //Active player update number 0 or 1.
 
     //next player
+    nextPlayer();
 
     //Check if the player won the game
-    }
+}
    
 
     function nextPlayer() {
