@@ -56,10 +56,10 @@ scores[activePlayer] += roundScore;
     nextPlayer();
 
     //Check if the player won the game
-}
+});
    
 
-    function nextPlayer() {
+function nextPlayer() {
          //next player
     activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
     roundScore = 0;
@@ -67,8 +67,9 @@ scores[activePlayer] += roundScore;
     document.getElementById('current-0').textContent = '0';
     document.getElementById('current-1').textContent = '0';
 
-    document.querySelector(.player-0-panel).classList.toggle('active');
-    document.querySelector(.player-1-panel).classList.toggle('active');
+    document.querySelector('.player-0-panel').classList.toggle('active');
+    document.querySelector('.player-1-panel').classList.toggle('active');
+    
     document.querySelector(.dice.style.display = 'none';
     }
 
