@@ -49,8 +49,6 @@ document.querySelector('btn-roll').addEventListener('click', function () {
     document.querySelector(.player-0-panel).classList.toggle('active');
     document.querySelector(.player-1-panel).classList.toggle('active');
     document.querySelector(.dice.style.display = 'none';
-    //document.querySelector(.player-0-panel).classList.remove('active');
-    //document.querySelector(.player-1-panel).classList.add('active');
   }
 
 });
@@ -58,10 +56,20 @@ document.querySelector('btn-roll').addEventListener('click', function () {
 document.querySelector('.btn-hold').addEventListener('click', function() {
     //Add current score to global score
 scores[activePlayer]; += roundScore;
+
     //Update User Interface
+    document.querySelector('#score-' + activePlayer).textContent = [activePlayer] //Active player update number 0 or 1.
 
     //Check if the player won the game
+    //next player
+    activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
+    roundScore = 0;
 
+    document.getElementById('current-0').textContent = '0';
+    document.getElementById('current-1').textContent = '0';
 
+    document.querySelector(.player-0-panel).classList.toggle('active');
+    document.querySelector(.player-1-panel).classList.toggle('active');
+    document.querySelector(.dice.style.display = 'none';
 
 };
