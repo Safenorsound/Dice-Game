@@ -23,7 +23,7 @@ document.getElementById('current-0').textContent = '0';
 document.getElementById('current-1').textContent = '0';
 
 //Anonymous function
-document.querySelector('btn-roll').addEventListener('click', function () {
+document.querySelector('.btn-roll').addEventListener('click', function () {
   // 1. Random Number
   var dice = Math.floor(Math.random() * 6) + 1;
 
@@ -55,6 +55,9 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
   nextPlayer();
 
   //Check if the player won the game
+
+  if (scores[activePlayer] >= 100);
+  document.querySelector(('#name-' + activePlayer.)textContent = 'WINNER!';
 });
 
 function nextPlayer() {
