@@ -56,13 +56,13 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
 
   //Check if the player won the game
 
-  if (scores[activePlayer] >= 100);
-  document.querySelector(('#name-' + activePlayer.)textContent = 'WINNER!';
-  
+  if (scores[activePlayer] >= 100) {
+  document.querySelector('#name-' + activePlayer.)textContent = 'WINNER!';
+
 } else {
     nextPlayer();
 
-    );
+});
 
 function nextPlayer() {
   //next player
