@@ -57,13 +57,12 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
   //Check if the player won the game
 
   if (scores[activePlayer] >= 100) {
-  document.querySelector('#name-' + activePlayer).textContent = 'WINNER!';
-  document.querySelector('.dice').style.display = 'none';
-
-} else {
+    document.querySelector('#name-' + activePlayer).textContent = 'WINNER!';
+    document.querySelector('.dice').style.display = 'none';
+  } else {
     nextPlayer();
-
-    }};
+  }
+});
 
 function nextPlayer() {
   //next player
