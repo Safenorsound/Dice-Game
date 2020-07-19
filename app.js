@@ -11,6 +11,8 @@ GAME RULES:
 
 var scores, roundScore, activePlayer;
 
+init();
+
 scores = [0, 0];
 roundScore = 0;
 activePlayer = 0;
@@ -89,3 +91,5 @@ document.querySelector('.btn-new').addEventListener('click'),
     activePlayer = 0;
     roundScore = 0;
   };
+
+function init() {}
