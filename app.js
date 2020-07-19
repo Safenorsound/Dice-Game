@@ -85,11 +85,10 @@ function nextPlayer() {
   // document.querySelector('.dice.style.display' = 'none';
 }
 
-document.querySelector('.btn-new').addEventListener('click'),
-  function () {
-    scores = [0, 0];
-    activePlayer = 0;
-    roundScore = 0;
-  };
+document.querySelector('.btn-new').addEventListener('click'), function () {};
 
-function init() {}
+function init() {
+  scores = [0, 0];
+  activePlayer = 0;
+  roundScore = 0;
+}
