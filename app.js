@@ -78,7 +78,7 @@ function nextPlayer() {
   // document.querySelector('.dice.style.display' = 'none';
 }
 
-document.querySelector('.btn-new').addEventListener('click'), function () {};
+document.querySelector('.btn-new').addEventListener('click', init);
 
 function init() {
   scores = [0, 0];
