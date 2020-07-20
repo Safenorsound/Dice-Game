@@ -104,4 +104,7 @@ function init() {
   //removes active class
   document.querySelector('player-0-panel').classList.remove('active');
   document.querySelector('player-1-panel').classList.remove('active');
+
+  //Adding an Active Class for player 1's first turn
+  document.querySelector('player-0-panel').classList.add('active');
 }
