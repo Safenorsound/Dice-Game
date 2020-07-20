@@ -100,4 +100,8 @@ function init() {
   //remove the winner CSS even if the class isn't there
   document.querySelector('player-0-panel').classList.remove('winner');
   document.querySelector('player-1-panel').classList.remove('winner');
+
+  //removes active class
+  document.querySelector('player-0-panel').classList.remove('active');
+  document.querySelector('player-1-panel').classList.remove('active');
 }
