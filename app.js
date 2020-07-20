@@ -95,4 +95,8 @@ function init() {
 
   document.getElementById('name-0').textContent = 'Player 1';
   document.getElementById('name-1').textContent = 'Player 2';
+
+  //remove the winner CSS even if the class isn't there
+  document.querySelector('player-0-panel').classList.remove('winner');
+  document.querySelector('player-1-panel').classList.remove('winner');
 }
