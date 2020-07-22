@@ -17,25 +17,27 @@ scores = [0, 0];
 roundScore = 0;
 activePlayer = 0;
 
-//Anonymous function
 document.querySelector('.btn-roll').addEventListener('click', function () {
-  // 1. Random Number
-  var dice = Math.floor(Math.random() * 6) + 1;
+  if (gamePlaying) {
+    // 1. Random number
+    var dice = Math.floor(Math.random() * 6) + 1;
 
-  // 2. Display the Result
-  var diceDOM = document.querySelector('.dice');
-  diceDOM.style.display = 'block';
-  diceDOM.src = 'dice-' + dice + '.png';
+    //2. Display the result
+    var diceDOM = document.querySelector('.dice');
+    diceDOM.style.display = 'block';
+    diceDOM.src = 'dice-' + dice + '.png';
 
-  // 3. Update the roundScore IF the roll is NOT 1.
-  if (dice !== 1) {
-    //differential operator
-    // add score
-    roundScore += dice;
-    document.querySelector('#current-' + activePlayer).textContent = roundScore;
-  } else {
-    //next player
-    nextPlayer();
+    //3. Update the round score IF the rolled number was NOT a 1
+    if (dice !== 1) {
+      //Add score
+      roundScore += dice;
+      document.querySelector(
+        '#current-' + activePlayer
+      ).textContent = roundScore;
+    } else {
+      //Next player
+      nextPlayer();
+    }
   }
 });
 
@@ -59,6 +61,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
     document
       .querySelector('player-' + activePlayer + '-panel')
       .classList.add('active');
+    gamePlaying = false;
   } else {
     nextPlayer();
   }
@@ -99,13 +102,13 @@ function init() {
   document.getElementById('name-1').textContent = 'Player 2';
 
   //remove the winner CSS even if the class isn't there
-  document.querySelector('player-0-panel').classList.remove('winner');
-  document.querySelector('player-1-panel').classList.remove('winner');
+  document.querySelector('.player-0-panel').classList.remove('winner');
+  document.querySelector('.player-1-panel').classList.remove('winner');
 
   //removes active class
-  document.querySelector('player-0-panel').classList.remove('active');
-  document.querySelector('player-1-panel').classList.remove('active');
+  document.querySelector('.player-0-panel').classList.remove('active');
+  document.querySelector('.player-1-panel').classList.remove('active');
 
   //Adding an Active Class for player 1's first turn
-  document.querySelector('player-0-panel').classList.add('active');
+  document.querySelector('.player-0-panel').classList.add('active');
 }
