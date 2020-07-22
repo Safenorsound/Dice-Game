@@ -13,7 +13,6 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
-
 document.querySelector('.btn-roll').addEventListener('click', function () {
   if (gamePlaying) {
     // 1. Random number
@@ -74,7 +73,7 @@ function nextPlayer() {
   document.querySelector('.player-0-panel').classList.toggle('active');
   document.querySelector('.player-1-panel').classList.toggle('active');
 
-  document.querySelector('.dice.style.display' = 'none';
+  document.querySelector('.dice').style.display = 'none';
 }
 
 document.querySelector('.btn-new').addEventListener('click', init);
