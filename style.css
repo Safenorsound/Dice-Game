@@ -53,20 +53,20 @@ body {
 **********************************************/
 
 .player-name {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 100;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   position: relative;
 }
 
 .player-score {
   text-align: center;
-  font-size: 80px;
-  font-weight: 100;
+  font-size: 50px;
+  font-weight: 200;
   color: #eb4d4d;
   margin-bottom: 130px;
 }
@@ -75,22 +75,22 @@ body {
   background-color: #f7f7f7;
 }
 .active .player-name {
-  font-weight: 300;
+  font-weight: 150;
 }
 
 .active .player-name::after {
   content: '\2022';
-  font-size: 40px;
+  font-size: 45px;
   position: absolute;
   color: #eb4d4d;
   top: -7px;
-  right: 20px;
+  right: -25px;
 }
 
 .player-current-box {
   background-color: #eb4d4d;
   color: #fff;
-  width: 40%;
+  /* width: 40%; */
   margin: 0 auto;
   padding: 12px;
   text-align: center;
@@ -99,12 +99,12 @@ body {
 .player-current-label {
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 20px;
   color: #222;
 }
 
 .player-current-score {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 button {
@@ -115,7 +115,7 @@ button {
   color: #555;
   background: none;
   border: none;
-  font-family: Lato;
+  font-family: 'Press Start 2P', cursive;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
@@ -168,6 +168,6 @@ i {
   background-color: #f7f7f7;
 }
 .winner .player-name {
-  font-weight: 300;
+  font-weight: 150;
   color: #eb4d4d;
 }
