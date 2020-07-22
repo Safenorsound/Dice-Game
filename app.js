@@ -42,7 +42,8 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
   scores[activePlayer] += roundScore;
 
   //Update User Interface
-  document.querySelector('#score-' + activePlayer).textContent = [activePlayer]; //Active player update number 0 or 1.
+  document.querySelector('#score-' + activePlayer).textContent =
+    scores[activePlayer]; //Active player update number 0 or 1.
 
   //next player
   nextPlayer();
@@ -89,21 +90,16 @@ function init() {
   //Resets the Scores
   document.getElementById('score-0').textContent = '0';
   document.getElementById('score-1').textContent = '0';
-
   document.getElementById('current-0').textContent = '0';
   document.getElementById('current-1').textContent = '0';
-
   document.getElementById('name-0').textContent = 'Player 1';
   document.getElementById('name-1').textContent = 'Player 2';
-
   //remove the winner CSS even if the class isn't there
   document.querySelector('.player-0-panel').classList.remove('winner');
   document.querySelector('.player-1-panel').classList.remove('winner');
-
   //removes active class
   document.querySelector('.player-0-panel').classList.remove('active');
   document.querySelector('.player-1-panel').classList.remove('active');
-
   //Adding an Active Class for player 1's first turn
   document.querySelector('.player-0-panel').classList.add('active');
 }
