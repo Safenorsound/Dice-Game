@@ -13,6 +13,8 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
+var lastDice;
+
 document.querySelector('.btn-roll').addEventListener('click', function () {
   if (gamePlaying) {
     // 1. Random number
