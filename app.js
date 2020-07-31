@@ -56,6 +56,9 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
     console.log(input);
 
     //If undefined, 0, null, '', are COERCED TO FALSE.
+    // Anything else is COERCED to true
+    if (input) {
+    }
 
     // Check if player won the game
     if (scores[activePlayer] >= 20) {
