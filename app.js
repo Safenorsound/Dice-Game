@@ -59,10 +59,12 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
     // Anything else is COERCED to true
     if (input) {
       var winningScore = input;
+    } else {
+      winningScore = 100;
     }
 
     // Check if player won the game
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= winningScore) {
       document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
       document.querySelector('.dice').style.display = 'none';
       document
