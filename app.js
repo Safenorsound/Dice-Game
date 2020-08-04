@@ -53,11 +53,11 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
       scores[activePlayer];
 
     var input = document.querySelector('.final-score').value;
-
+    var winningScore;
     //If undefined, 0, null, '', are COERCED TO FALSE.
     // Anything else is COERCED to true
     if (input) {
-      var winningScore = input;
+      winningScore = input;
     } else {
       winningScore = 100;
     }
