@@ -100,7 +100,7 @@ function init() {
   roundScore = 0;
   gamePlaying = true;
 
-  document.querySelector('.dice').getElementsByClassName.display = 'none';
+  document.querySelector('.dice').style.display = 'none';
 
   //Reset the Scores
   document.getElementById('score-0').textContent = '0';
