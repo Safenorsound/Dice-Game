@@ -5,13 +5,12 @@
 .final-score {
   position: absolute;
   left: 50%;
-  /* This centers the feature */
   transform: translateX(-50%);
   top: 520px;
-  /* Color */
+  color: #555;
   font-size: 18px;
-  font-family: 'Press Start 2P', cursive;
-  text-align: centre;
+  font-family: 'Lato';
+  text-align: center;
   padding: 10px;
   width: 160px;
   text-transform: uppercase;
